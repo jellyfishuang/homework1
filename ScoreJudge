@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<input type="number" id="x">
+<br><br>
+<input type="reset" onclick="judge()" value="C">
+<br><br>
+<output id="result">
+
+<script>
+function judge()	{
+	var x,score;
+    x=document.getElementById("x").value;
+    score=parseInt(x);
+	
+    if(score>=60)
+    	document.getElementById("result").innerHTML="及格";
+    else if(score<60)
+    	document.getElementById("result").innerHTML="不及格";
+}
+</script>
+
+</body>
+</html>
