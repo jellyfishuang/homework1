@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Functions</h1>
+
+<p>This example calls a function which performs a calculation, and returns the result:</p>
+<form>
+<input type="number" id="x">
+<br><br>
+<input type="number" id="y">
+<br><br>
+<input type="reset" onclick="zero()" value="C">
+</form>
+<button type="button" onclick="plus()">Plus</button>
+<button type="button" onclick="subtraction()">Subtraction</button>
+<button type="button" onclick="multiplication()">Multiplication</button>
+<button type="button" onclick="division()">Division</button>
+
+<br><br>
+<output id="result">
+
+
+<script>
+function zero() {
+	document.getElementById("result").innerHTML=0;
+}
+function plus() {
+	var x,y,x1,y1;
+    x=document.getElementById("x").value;
+    y=document.getElementById("y").value;
+    x1=parseInt(x);
+    y1=parseInt(y);
+    document.getElementById("result").innerHTML=x1+y1;
+}
+function subtraction() {
+	var x,y,x1,y1;
+    x=document.getElementById("x").value;
+    y=document.getElementById("y").value;
+    x1=parseInt(x);
+    y1=parseInt(y);
+    document.getElementById("result").innerHTML=x1-y1;
+ }   
+function multiplication() {
+	var x,y,x1,y1;
+    x=document.getElementById("x").value;
+    y=document.getElementById("y").value;
+    x1=parseInt(x);
+    y1=parseInt(y);
+    document.getElementById("result").innerHTML=x1*y1;
+  }  
+function division() {
+	var x,y,x1,y1;
+    x=document.getElementById("x").value;
+    y=document.getElementById("y").value;
+    x1=parseInt(x);
+    y1=parseInt(y);
+    document.getElementById("result").innerHTML=x1/y1;
+}
+</script>
+<br>
+</body>
+</html>
